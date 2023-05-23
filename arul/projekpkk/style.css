@@ -1,0 +1,290 @@
+/*Navbar*/
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  quotes: none;
+  text-decoration: unset;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.nav {
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.nav.active {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav.hide {
+  top: -200px !important;
+}
+
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.brand span {
+  color: rgb(0, 0, 0);
+}
+
+.brand img {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-burger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  visibility: hidden;
+  margin-top: 10px;
+}
+
+.nav-menu a {
+  padding: 10px 0;
+  width: 100%;
+  margin: 5px 0;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.nav-menu a:nth-child(6) {
+  font-weight: bold;
+}
+
+.nav-menu.active {
+  max-height: 200rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu-dekstop {
+  display: none;
+}
+
+@media screen and (min-width: 968px) {
+  .nav-burger {
+    display: none;
+  }
+
+  .nav-menu {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    max-height: inherit;
+    opacity: inherit;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    visibility: inherit;
+    margin-top: inherit;
+  }
+
+  .nav-menu a {
+    padding: 10px 10px;
+    margin: 5px 0;
+    width: inherit;
+    cursor: pointer;
+    display: inherit;
+    position: inherit;
+    display: flex;
+    position: relative;
+  }
+
+  .nav-menu a:nth-child(5),
+  .nav-menu a:nth-child(6) {
+    display: none;
+  }
+
+  .nav-menu-dekstop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu-dekstop a {
+    padding: 5px 15px;
+    width: inherit;
+    margin: 5px 0;
+    cursor: pointer;
+    display: inherit;
+    position: inherit;
+    display: flex;
+    position: relative;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-menu-dekstop a:nth-child(2) {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+
+/*semua*/  
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+body
+{
+    background-color: white;
+}
+  
+.badan
+{
+    width: 880px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+  
+.badan h2
+{
+    color: crimson;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px;
+    margin-bottom: 13px;
+}
+  
+.list-produk
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 1px;
+}
+  
+.list-produk:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+  
+.list-produk img
+{
+    width: 100%;
+    height: 175px;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.list-produk h4, .list-produk h5
+{
+    color: crimson;
+    text-align: center;
+    margin-bottom: 5px;
+}
+  
+.tombol
+{
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 4px;
+    text-align: center;
+    color: white;
+}
+  
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 700ms;
+}
+  
+.tombol-detail
+{
+    background-color: green;
+}
+  
+.tombol-beli
+{
+    background-color: crimson;
+}
+
+/*Footer*/
+*{margin: 0px auto;}
+html,body{
+    height: 100%;
+}
+
+#container{
+    position: relative;
+}
+
+.header{
+    background: #0cf;
+    padding: 10px;
+}
+
+.content{
+    padding: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+}

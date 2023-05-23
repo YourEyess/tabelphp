@@ -1,0 +1,31 @@
+.tabel {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 68%;
+    border: 1px solid rgb(195, 48, 48);
+    margin-top: 20px;
+    margin-left: 265px;
+    font-size: 10px;
+  }
+  
+  .tabel tr th {
+    background-color: rgb(225, 109, 109);
+    color: #fff;
+    font-weight: normal;
+  }
+  
+  .tabel th,
+  td {
+    padding: 8px 20px;
+    text-align: center;
+  }
+  
+  .tabel tr:nth-child(even) {
+    background: #779ef1;
+  }
+  
+  .tabel tr:nth-child(2n + 1) {
+    background: #f17777;
+  }
+  
